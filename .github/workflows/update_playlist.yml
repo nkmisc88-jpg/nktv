@@ -2,15 +2,29 @@ name: Ghost Playlist Update
 
 on:
   schedule:
-    - cron: '*/7 * * * *' # Runs every 7 minutes
-  workflow_dispatch: # Allows you to click "Run workflow" manually
+    - cron: '*/7 * * * *' # Runs every 7 minutes (0, 7, 14, 21...)
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   run-hidden-script:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Public Runner
         uses: actions/checkout@v3
+
+      # --- Step to get your Private Text Files ---
+      - name: Checkout Private Repo (nk)
+        uses: actions/checkout@v3
+        with:
+          repository: nkmisc88-jpg/nk   # Your private repo path
+          token: ${{ secrets.GIST_TOKEN }} # MUST have 'repo' permission
+          path: private_data
+
+      - name: Move Text Files to Root
+        run: |
+          # Moves Temporary.txt etc. to where the script expects them
+          cp private_data/*.txt . 
+          ls -la # Debug: Confirm files are here
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -22,23 +36,14 @@ jobs:
           GH_TOKEN: ${{ secrets.GIST_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }} 
         run: |
-          # Clone the secret gist
           gh gist clone $GIST_ID hidden_workspace
-          
-          # Move files to current directory so Python can find them
-          mv hidden_workspace/* .
+          # Move script to root
+          mv hidden_workspace/nk.py .
 
       - name: Run nk.py
         run: |
           pip install requests
-          
-          # Run the specific script name you provided
           python nk.py
-
-      - name: Debug - List Files
-        run: |
-          # This will show us all files. Look here if the next step fails!
-          ls -la
 
       - name: Upload Result to Gist
         env:
@@ -48,13 +53,13 @@ jobs:
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           
-          # Re-clone to ensure we have the latest state
+          # Clean up old gist folder and re-clone
           rm -rf hidden_workspace
           gh gist clone $GIST_ID hidden_workspace
           
-          # IMPORTANT: Check if your script outputs 'output.m3u'. 
-          # If your script saves it as 'playlist.m3u' or something else, change it below.
-          cp nk.m3u hidden_workspace/
+          # Copy the NEW playlist to the gist folder
+          # Warning: This overwrites the old m3u in the Gist
+          cp *.m3u hidden_workspace/
           
           cd hidden_workspace
           git add .
