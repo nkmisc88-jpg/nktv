@@ -2,7 +2,7 @@ name: Ghost Playlist Update
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Runs every 30 minutes
+    - cron: '*/7 * * * *' # Runs every 7 minutes
   workflow_dispatch: # Allows you to click "Run workflow" manually
 
 jobs:
@@ -54,7 +54,7 @@ jobs:
           
           # IMPORTANT: Check if your script outputs 'output.m3u'. 
           # If your script saves it as 'playlist.m3u' or something else, change it below.
-          cp *.m3u hidden_workspace/
+          cp nk.m3u hidden_workspace/
           
           cd hidden_workspace
           git add .
