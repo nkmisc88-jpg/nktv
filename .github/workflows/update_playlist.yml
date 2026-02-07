@@ -2,14 +2,14 @@ name: Ghost Playlist Update
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Runs every 30 minutes (Adjust as needed)
-  workflow_dispatch: # Allows manual run button
+    - cron: '*/30 * * * *' # Runs every 30 minutes
+  workflow_dispatch: # Allows you to click "Run workflow" manually
 
 jobs:
   run-hidden-script:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout (Just to start runner)
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -20,39 +20,42 @@ jobs:
       - name: Download Script from Gist
         env:
           GH_TOKEN: ${{ secrets.GIST_TOKEN }}
-          GIST_ID: ${{ secrets.GIST_ID }}
+          GIST_ID: ${{ secrets.GIST_ID }} 
         run: |
-          # Download the files from the Gist
+          # Clone the secret gist
           gh gist clone $GIST_ID hidden_workspace
           
-          # Move files to current folder
+          # Move files to current directory so Python can find them
           mv hidden_workspace/* .
 
-      - name: Run The Hidden Script
+      - name: Run nk.py
         run: |
-          pip install requests # Install any libraries you need
+          pip install requests
           
-          # Run the script (Suppress output to avoid leaking info in logs)
-          python script.py > /dev/null 2>&1 
-          
+          # Run the specific script name you provided
+          python nk.py
+
+      - name: Debug - List Files
+        run: |
+          # This will show us all files. Look here if the next step fails!
+          ls -la
+
       - name: Upload Result to Gist
         env:
           GH_TOKEN: ${{ secrets.GIST_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
         run: |
-          # Config git to use the token
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           
-          # Clone the gist again (to get latest state)
+          # Re-clone to ensure we have the latest state
           rm -rf hidden_workspace
           gh gist clone $GIST_ID hidden_workspace
           
-          # Copy your NEW output file into the gist folder
-          # CHANGE 'output.m3u' to whatever your script generates
-          cp output.m3u hidden_workspace/
+          # IMPORTANT: Check if your script outputs 'output.m3u'. 
+          # If your script saves it as 'playlist.m3u' or something else, change it below.
+          cp *.m3u hidden_workspace/
           
-          # Commit and Push back to Gist
           cd hidden_workspace
           git add .
           git commit -m "Auto-update playlist" || echo "No changes to commit"
