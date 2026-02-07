@@ -2,7 +2,7 @@ name: Ghost Playlist Update
 
 on:
   schedule:
-    - cron: '*/7 * * * *' # Runs every 7 minutes (0, 7, 14, 21...)
+    - cron: '*/7 * * * *' # Runs every 7 minutes
   workflow_dispatch: # Allows manual trigger
 
 jobs:
@@ -12,19 +12,23 @@ jobs:
       - name: Checkout Public Runner
         uses: actions/checkout@v3
 
-      # --- Step to get your Private Text Files ---
+      # --- Step 1: Get Private Files ---
       - name: Checkout Private Repo (nk)
         uses: actions/checkout@v3
         with:
-          repository: nkmisc88-jpg/nk   # Your private repo path
-          token: ${{ secrets.GIST_TOKEN }} # MUST have 'repo' permission
+          repository: nkmisc88-jpg/nk
+          token: ${{ secrets.GIST_TOKEN }} # Ensure this token has 'repo' checkbox checked!
           path: private_data
 
+      # --- Step 2: Move Them (Handling Spaces) ---
       - name: Move Text Files to Root
         run: |
-          # Moves Temporary.txt etc. to where the script expects them
-          cp private_data/*.txt . 
-          ls -la # Debug: Confirm files are here
+          # Explicitly copy the two specific files you need
+          cp private_data/Temporary.txt .
+          cp "private_data/media presentation description.txt" .
+          
+          # List files to confirm (for debugging logs)
+          ls -la
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -37,7 +41,7 @@ jobs:
           GIST_ID: ${{ secrets.GIST_ID }} 
         run: |
           gh gist clone $GIST_ID hidden_workspace
-          # Move script to root
+          # Move script to root so it can see the text files
           mv hidden_workspace/nk.py .
 
       - name: Run nk.py
@@ -58,7 +62,6 @@ jobs:
           gh gist clone $GIST_ID hidden_workspace
           
           # Copy the NEW playlist to the gist folder
-          # Warning: This overwrites the old m3u in the Gist
           cp *.m3u hidden_workspace/
           
           cd hidden_workspace
