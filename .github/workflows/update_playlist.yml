@@ -1,0 +1,59 @@
+name: Ghost Playlist Update
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Runs every 30 minutes (Adjust as needed)
+  workflow_dispatch: # Allows manual run button
+
+jobs:
+  run-hidden-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (Just to start runner)
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Download Script from Gist
+        env:
+          GH_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+        run: |
+          # Download the files from the Gist
+          gh gist clone $GIST_ID hidden_workspace
+          
+          # Move files to current folder
+          mv hidden_workspace/* .
+
+      - name: Run The Hidden Script
+        run: |
+          pip install requests # Install any libraries you need
+          
+          # Run the script (Suppress output to avoid leaking info in logs)
+          python script.py > /dev/null 2>&1 
+          
+      - name: Upload Result to Gist
+        env:
+          GH_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+        run: |
+          # Config git to use the token
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          
+          # Clone the gist again (to get latest state)
+          rm -rf hidden_workspace
+          gh gist clone $GIST_ID hidden_workspace
+          
+          # Copy your NEW output file into the gist folder
+          # CHANGE 'output.m3u' to whatever your script generates
+          cp output.m3u hidden_workspace/
+          
+          # Commit and Push back to Gist
+          cd hidden_workspace
+          git add .
+          git commit -m "Auto-update playlist" || echo "No changes to commit"
+          git push https://$GH_TOKEN@gist.github.com/$GIST_ID.git HEAD
