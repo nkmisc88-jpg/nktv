@@ -1,249 +1,84 @@
+#EXTM3U x-tvg-url="https://drmlive.net/epg/cricket.xml.gz,https://avcdn.pw/epg/guide.xml.gz"
+
+#EXTINF:-1 tvg-id="Activate" tvg-logo="https://i.postimg.cc/d3Yf3PHX/DRMLIVE-Aggressive-Logo.png" group-title="ICC T20 CWC",Activate Playlist
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/allowipmpd_key.php?id=chlajabsdk
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/d3Yf3PHX/DRMLIVE-Aggressive-Logo.png" group-title="1-Playlist-Activation",Activate Playlist
 https://mix.drmlive.net/mix/actchaljabsdk.mpd?token=TkYzbDU5OS94TjZEUHhwVVNwM0JhZ29uREJqdlJFYjFNYWVqS2tCaWJWQnpUM3hCY28vU3FDZkxCRXdlak50a0JvRml5aHVUZG9GMWErY1ZFc3ZySjBjRzIvQXNzTmkvUmIxZmNlOHYvY3pnM1JDditlS0J1bGxCdE45SFRFd1U=
 
+#EXTINF:-1 tvg-id="WillowHD.us" tvg-logo="http://p-img.movetv.com/cms/images/b7c5841c82ec21c38cd43815c7c49791ae3bcc56.png" group-title="ICC T20 CWC",Willow HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://la.drmlive.net/tp/sling_ck?id=22
-#EXTINF:-1 tvg-logo="http://p-img.movetv.com/cms/images/b7c5841c82ec21c38cd43815c7c49791ae3bcc56.png" group-title="Cricket",Willow HD
 https://la.drmlive.net/tp/sling-22.mpd
 
+#EXTINF:-1 tvg-id="Willow2.us" tvg-logo="https://p-img.movetv.com/1280x720/3dca399cce2d5ddec3993ae3dc351399.png" group-title="ICC T20 CWC",Willow 2
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://la.drmlive.net/tp/sling_ck?id=672
-#EXTINF:-1 tvg-logo="https://p-img.movetv.com/1280x720/3dca399cce2d5ddec3993ae3dc351399.png" group-title="Cricket",Willow 2
 https://la.drmlive.net/tp/sling-672.mpd
 
+#EXTINF:-1 tvg-id="WillowExtra.us" tvg-logo="http://p-img.movetv.com/1280x720/6cc66eec23429f8821491ce16bf5032c.png" group-title="ICC T20 CWC",Willow Sports
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/sports_key.php?id=willows
-#EXTINF:-1 tvg-logo="http://p-img.movetv.com/1280x720/6cc66eec23429f8821491ce16bf5032c.png" group-title="Cricket",Willow Sports
 https://mix.drmlive.net/mix/sportswillows.mpd
 
+#EXTINF:-1 tvg-id="FanCode.in" tvg-logo="https://m.media-amazon.com/images/G/01/LCXO_Station_Logos/FanCode1_White-Logo._AC_SL360_FMpng_.png" group-title="ICC T20 CWC",Fancode
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/sports_key.php?id=fancode
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/G/01/LCXO_Station_Logos/FanCode1_White-Logo._AC_SL360_FMpng_.png" group-title="Cricket",Fancode
 #EXTVLCOPT:http-user-agent=third-party
 https://mix.drmlive.net/mix/sportsfancode.mpd
 
+#EXTINF:-1 tvg-id="FanCode2.in" tvg-logo="https://m.media-amazon.com/images/G/01/LCXO_Station_Logos/FanCode2_White-Logo._AC_SL360_FMpng_.png" group-title="ICC T20 CWC",Fancode 2
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/sports_key.php?id=fancode2
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/G/01/LCXO_Station_Logos/FanCode2_White-Logo._AC_SL360_FMpng_.png" group-title="Cricket",Fancode 2
 #EXTVLCOPT:http-user-agent=third-party
 https://mix.drmlive.net/mix/sportsfancode2.mpd
 
+#EXTINF:-1 tvg-id="StarSports1.in" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/2026_ICC_Men%27s_T20_World_Cup_logo.svg/250px-2026_ICC_Men%27s_T20_World_Cup_logo.svg.png" group-title="ICC T20 CWC", Men's T20 World Cup 2026 Eng M1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/primevauicc1.mpd
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/2026_ICC_Men%27s_T20_World_Cup_logo.svg/250px-2026_ICC_Men%27s_T20_World_Cup_logo.svg.png" group-title="Cricket", Men's T20 World Cup 2026 Eng M1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
 https://mix.drmlive.net/mix/primevauicc1.mpd
 
+#EXTINF:-1 tvg-id="StarSports2.in" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/2026_ICC_Men%27s_T20_World_Cup_logo.svg/250px-2026_ICC_Men%27s_T20_World_Cup_logo.svg.png" group-title="ICC T20 CWC", Men's T20 World Cup 2026 Eng M2
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/primevauicc2.mpd
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/2026_ICC_Men%27s_T20_World_Cup_logo.svg/250px-2026_ICC_Men%27s_T20_World_Cup_logo.svg.png" group-title="Cricket", Men's T20 World Cup 2026 Eng M2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
 https://mix.drmlive.net/mix/primevauicc2.mpd
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/primevauicc3.mpd
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/2026_ICC_Men%27s_T20_World_Cup_logo.svg/250px-2026_ICC_Men%27s_T20_World_Cup_logo.svg.png" group-title="Cricket", Men's T20 World Cup 2026 Eng M3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/primevauicc3.mpd
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/sports_key.php?id=prime_eng_m3
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.e90b42b5-7525-4238-97c3-47ae5bb14567/1/BOXART-16X9/en-US._UY222_BG0,0,0_FP_.png" group-title="Cricket", T20I series New Zealand vs West Indies live on Prime
-#https://mix.drmlive.net/mix/sportsprime_eng_m3.mpd
-
+#EXTINF:-1 tvg-id="StarSports1Hindi.in" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/2026_ICC_Men%27s_T20_World_Cup_logo.svg/250px-2026_ICC_Men%27s_T20_World_Cup_logo.svg.png" group-title="ICC T20 CWC", Primevideo AU Hindi
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/sports_key.php?id=prime_hin
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/2026_ICC_Men%27s_T20_World_Cup_logo.svg/250px-2026_ICC_Men%27s_T20_World_Cup_logo.svg.png" group-title="Cricket", Primevideo AU Hindi
 https://mix.drmlive.net/mix/sportsprime_hin.mpd
 
-
-#EXTINF:-1 group-title="Cricket",Event 1
+#EXTINF:-1 tvg-id="StarSports1.in" group-title="ICC T20 CWC",Event 1 (Star 1)
 #EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
 https://mix.drmlive.net/mix/star-1.m3u8
 
-#EXTINF:-1 group-title="Cricket",Event 1 hindi
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
-https://mix.drmlive.net/mix/star-1.m3u8?audio=hin
-
-#EXTINF:-1 group-title="Cricket",Event 2
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
-https://mix.drmlive.net/mix/star-2.m3u8
-
-#EXTINF:-1 group-title="Cricket",Event 2 hindi
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
-https://mix.drmlive.net/mix/star-2.m3u8?audio=hin
-
-#EXTINF:-1 group-title="Cricket",Event 3
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
-https://mix.drmlive.net/mix/star-3.m3u8
-
-#EXTINF:-1 group-title="Cricket",Event 3 hindi
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
-https://mix.drmlive.net/mix/star-3.m3u8?audio=hin
-
-#EXTINF:-1 group-title="Cricket",Event 4
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
-https://mix.drmlive.net/mix/star-4.m3u8
-
-#EXTINF:-1 group-title="Cricket",Event 4 hindi
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
-https://mix.drmlive.net/mix/star-4.m3u8?audio=hin
-
-#EXTINF:-1 group-title="Cricket",Event 5
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
-https://mix.drmlive.net/mix/star-5.m3u8
-
-#EXTINF:-1 group-title="Cricket",Event 5 hindi
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
-https://mix.drmlive.net/mix/star-5.m3u8?audio=hin
-
-#EXTINF:-1 group-title="Cricket",Event 6
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
-https://mix.drmlive.net/mix/star-6.m3u8
-
-#EXTINF:-1 group-title="Cricket",Event 6 hindi
-#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/24.10.07.2.10542 (Android/9)
-https://mix.drmlive.net/mix/star-6.m3u8?audio=hin
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drmlive/mix/refs/heads/main/fancode.png" group-title="Cricket",Fancode Event 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/fancode-1.m3u8?category=cricket|Referer=https://fancode.com/
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drmlive/mix/refs/heads/main/fancode.png" group-title="Cricket",Fancode Event 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/fancode-2.m3u8?category=cricket|Referer=https://fancode.com/
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drmlive/mix/refs/heads/main/fancode.png" group-title="Cricket",Fancode Event 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/fancode-3.m3u8?category=cricket|Referer=https://fancode.com/
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drmlive/mix/refs/heads/main/fancode.png" group-title="Cricket",Fancode Event 4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/fancode-4.m3u8?category=cricket|Referer=https://fancode.com/
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drmlive/mix/refs/heads/main/fancode.png" group-title="Cricket",Fancode Event 5
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/fancode-5.m3u8?category=cricket|Referer=https://fancode.com/
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drmlive/mix/refs/heads/main/fancode.png" group-title="Cricket",Fancode Event 6
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/fancode-6.m3u8?category=cricket|Referer=https://fancode.com/
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drmlive/mix/refs/heads/main/fancode.png" group-title="Sports",Fancode Event Extra 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/fancode-1.m3u8|Referer=https://fancode.com/
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drmlive/mix/refs/heads/main/fancode.png" group-title="Sports",Fancode Event Extra 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/fancode-2.m3u8|Referer=https://fancode.com/
-
-#EXTINF:-1 tvg-logo="https://pnghdpro.com/wp-content/themes/pnghdpro/download/social-media-and-brands/sony-liv-logo.png" group-title="Cricket",SLIV Event 1
+#EXTINF:-1 tvg-id="SonyTen1.in" tvg-logo="https://pnghdpro.com/wp-content/themes/pnghdpro/download/social-media-and-brands/sony-liv-logo.png" group-title="ICC T20 CWC",SLIV Event 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
 https://mix.drmlive.net/mix/suluv-1.m3u8?category=cricket
 
-#EXTINF:-1 tvg-logo="https://pnghdpro.com/wp-content/themes/pnghdpro/download/social-media-and-brands/sony-liv-logo.png" group-title="Cricket",SLIV Event 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/suluv-2.m3u8?category=cricket
-
-#EXTINF:-1 tvg-logo="https://pnghdpro.com/wp-content/themes/pnghdpro/download/social-media-and-brands/sony-liv-logo.png" group-title="Cricket",SLIV Event 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/suluv-3.m3u8?category=cricket
-
-#EXTINF:-1 tvg-logo="https://pnghdpro.com/wp-content/themes/pnghdpro/download/social-media-and-brands/sony-liv-logo.png" group-title="Cricket",SLIV Event 4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/suluv-4.m3u8?category=cricket
-
-#EXTINF:-1 tvg-logo="https://pnghdpro.com/wp-content/themes/pnghdpro/download/social-media-and-brands/sony-liv-logo.png" group-title="Sports",SLIV Event Extra 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/suluv-1.m3u8
-
-#EXTINF:-1 tvg-logo="https://pnghdpro.com/wp-content/themes/pnghdpro/download/social-media-and-brands/sony-liv-logo.png" group-title="Sports",SLIV Event Extra 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.5563.58 Mobile Safari/537.36
-https://mix.drmlive.net/mix/suluv-2.m3u8
-
+#EXTINF:-1 tvg-id="ICCTV1" tvg-logo="https://i0.wp.com/amazingcollections.net/wp-content/uploads/2022/06/ICC-TV-Live-Subscription.jpg" group-title="ICC T20 CWC",ICC TV M1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/icctv1.mpd
-#EXTINF:-1 tvg-logo="https://i0.wp.com/amazingcollections.net/wp-content/uploads/2022/06/ICC-TV-Live-Subscription.jpg" group-title="Cricket",ICC TV M1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
 https://mix.drmlive.net/mix/icctv1.mpd
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/icctv2.mpd
-#EXTINF:-1 tvg-logo="https://i0.wp.com/amazingcollections.net/wp-content/uploads/2022/06/ICC-TV-Live-Subscription.jpg" group-title="Cricket",ICC TV M2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://mix.drmlive.net/mix/icctv2.mpd
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/icctv3.mpd
-#EXTINF:-1 tvg-logo="https://i0.wp.com/amazingcollections.net/wp-content/uploads/2022/06/ICC-TV-Live-Subscription.jpg" group-title="Cricket",ICC TV M3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://mix.drmlive.net/mix/icctv3.mpd
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/icctv4.mpd
-#EXTINF:-1 tvg-logo="https://i0.wp.com/amazingcollections.net/wp-content/uploads/2022/06/ICC-TV-Live-Subscription.jpg" group-title="Cricket",ICC TV M4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://mix.drmlive.net/mix/icctv4.mpd
-e=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=79584ff8854536a3829f177423cdf684:e6c7e6a131dea887edf696d50cd24ba9
-https://joker-boro.onrender.com/icctv/manifest4.mpd
-
-#EXTINF:-1 tvg-id=""  group-title="🆃20-🅲🆆🅲" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg",Nagorik HD
-http://116.204.149.16/nagorik/index.m3u8
-
-#EXTINF:-1 tvg-id=""  group-title="🆃20-🅲🆆🅲" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg",Tolo Sports
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://stream1.liveland.af/hls/tv/tolo-sport/chunklist3.m3u8
-
-#EXTINF:-1 tvg-id=""  group-title="🆃20-🅲🆆🅲" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg",Sky Sports Main Events
+#EXTINF:-1 tvg-id="SkySportsMainEvent.uk" group-title="ICC T20 CWC",Sky Sports Main Events
+#EXTIMG:https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg
 http://homeworkagain.eu:80/play/13qpE-WRd3W-cFeNkxGohwa5-9m7p_JLIpwHJhOgeZtH2P2MP_0fLnLJhkQ3TUHmu5BnIh_D-nUnwenxg88dtvQn798lRLo5Y0-SiEf8fJ62gAti4lvt2mImJCj9FeVAYixArEcS1y6FTCEVenfAqF2bp4pSf2nafbIUp4cPXCI?ext=.ts
-#EXTINF:-1 tvg-id=""  group-title="🆃20-🅲🆆🅲" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg",Sky Sports Cricket HD
+
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" group-title="ICC T20 CWC",Sky Sports Cricket HD
+#EXTIMG:https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg
 http://homeworkagain.eu:80/play/13qpE-WRd3W-cFeNkxGohwa5-9m7p_JLIpwHJhOgeZtH2P2MP_0fLnLJhkQ3TUHmu5BnIh_D-nUnwenxg88dtvQn798lRLo5Y0-SiEf8fJ62gAti4lvt2mImJCj9FeVAYixArEcS1y6FTCEVenfAqF2bp4pSf2nafbIUp4cPXCI?ext=.ts
-#EXTINF:-1 tvg-id=""  group-title="🆃20-🅲🆆🅲" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg",Sky Sports Main Events UHD
-http://homeworkagain.eu:80/play/13qpE-WRd3W-cFeNkxGohwa5-9m7p_JLIpwHJhOgeZtH2P2MP_0fLnLJhkQ3TUHmu5BnIh_D-nUnwenxg88dtvQn798lRLo5Y0-SiEf8fJ5Vo1IsYnK-8dqXR7n6tpTAG02XoZIhqUBEfndzyhkMF0a6wJFkYy8TJzMwQQmJUuQ?ext=.ts
 
-
-#EXTINF:-1 tvg-id="SkySports2" tvg-name="Sky Sports NZ 2 FHD" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg" group-title="🆃20-🅲🆆🅲",Sky Sports NZ 2 FHD
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=708a98b352bd4418a73a028edd84da8f:b1fa5c2bca4c4b57b924b748564532cb
-https://fftv.in/skynz/SkySports2.mpd
-
-#EXTINF:-1 tvg-id="SkyUHD" tvg-name="Sky Sports NZ UHD" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg" group-title="🆃20-🅲🆆🅲",Sky Sports NZ UHD
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4d346b1d1ae64d4a800409cffa14983e:208c972bd2da4359ac94e6944fe378b6
-https://fftv.in/skynz/SkyUHD.mpd
-
-#EXTINF:-1 tvg-id="SkySportsSelect" tvg-name="Sky Sports NZ Select FHD" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg" group-title="🆃20-🅲🆆🅲",Sky Sports NZ Select FHD
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=01d02c97d1c949f9877acd230dcaa56d:708410b8bf1f4e998931183e8fab5d1e
-https://fftv.in/skynz/SkySportsSelect.mpd
-
-EXTINF:-1 tvg-id="SkySports1" tvg-name="Sky Sports NZ 1 FHD" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg" group-title="🆃20-🅲🆆🅲",Sky Sports NZ 1 FHD
-
-EXTINF:-1 tvg-id="SkySports1" tvg-name="Sky Sports NZ 1 FHD" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg" group-title="🆃20-🅲🆆🅲",Sky Sports NZ 1 FHD
+#EXTINF:-1 tvg-id="SkySports1.nz" group-title="ICC T20 CWC",Sky Sports NZ 1 FHD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=aefc2c8d1c8840f1b6981f856c9269ba:cf8ea114c45b4d6596b2748258ab74d6
 https://fftv.in/skynz/SkySports1.mpd
-
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=aefc2c8d1c8840f1b6981f856c9269ba:cf8ea114c45b4d6596b2748258ab74d6
-https://fftv.in/skynz/SkySports1.mpd
-
-
-
