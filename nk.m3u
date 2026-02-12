@@ -232,3 +232,18 @@ https://fftv.in/skynz/SkyUHD.mpd
 #KODIPROP:inputstream.adaptive.license_key=01d02c97d1c949f9877acd230dcaa56d:708410b8bf1f4e998931183e8fab5d1e
 https://fftv.in/skynz/SkySportsSelect.mpd
 
+EXTINF:-1 tvg-id="SkySports1" tvg-name="Sky Sports NZ 1 FHD" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg" group-title="🆃20-🅲🆆🅲",Sky Sports NZ 1 FHD
+
+EXTINF:-1 tvg-id="SkySports1" tvg-name="Sky Sports NZ 1 FHD" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg" group-title="🆃20-🅲🆆🅲",Sky Sports NZ 1 FHD
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=aefc2c8d1c8840f1b6981f856c9269ba:cf8ea114c45b4d6596b2748258ab74d6
+https://fftv.in/skynz/SkySports1.mpd
+
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=aefc2c8d1c8840f1b6981f856c9269ba:cf8ea114c45b4d6596b2748258ab74d6
+https://fftv.in/skynz/SkySports1.mpd
+
+
+
