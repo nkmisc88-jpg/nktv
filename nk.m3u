@@ -213,3 +213,22 @@ http://homeworkagain.eu:80/play/13qpE-WRd3W-cFeNkxGohwa5-9m7p_JLIpwHJhOgeZtH2P2M
 #EXTINF:-1 tvg-id=""  group-title="🆃20-🅲🆆🅲" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg",Sky Sports Main Events UHD
 http://homeworkagain.eu:80/play/13qpE-WRd3W-cFeNkxGohwa5-9m7p_JLIpwHJhOgeZtH2P2MP_0fLnLJhkQ3TUHmu5BnIh_D-nUnwenxg88dtvQn798lRLo5Y0-SiEf8fJ5Vo1IsYnK-8dqXR7n6tpTAG02XoZIhqUBEfndzyhkMF0a6wJFkYy8TJzMwQQmJUuQ?ext=.ts
 
+
+#EXTINF:-1 tvg-id="SkySports2" tvg-name="Sky Sports NZ 2 FHD" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg" group-title="🆃20-🅲🆆🅲",Sky Sports NZ 2 FHD
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=708a98b352bd4418a73a028edd84da8f:b1fa5c2bca4c4b57b924b748564532cb
+https://fftv.in/skynz/SkySports2.mpd
+
+#EXTINF:-1 tvg-id="SkyUHD" tvg-name="Sky Sports NZ UHD" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg" group-title="🆃20-🅲🆆🅲",Sky Sports NZ UHD
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=4d346b1d1ae64d4a800409cffa14983e:208c972bd2da4359ac94e6944fe378b6
+https://fftv.in/skynz/SkyUHD.mpd
+
+#EXTINF:-1 tvg-id="SkySportsSelect" tvg-name="Sky Sports NZ Select FHD" tvg-logo="https://www.bssnews.net/assets/news_photos/2025/11/25/image-335724-1764085215.jpg" group-title="🆃20-🅲🆆🅲",Sky Sports NZ Select FHD
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=01d02c97d1c949f9877acd230dcaa56d:708410b8bf1f4e998931183e8fab5d1e
+https://fftv.in/skynz/SkySportsSelect.mpd
+
