@@ -1,0 +1,36 @@
+name: Tamil VOD Sync (Gist to Gist)
+
+on:
+  schedule:
+    - cron: '0 */21 * * *'  # Set to your preferred 21hr interval
+  workflow_dispatch:
+
+jobs:
+  run-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Download and Run Script from Gist
+        env:
+          GH_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_ID: "PASTE_YOUR_GIST_ID_HERE"
+        run: |
+          # 1. Download the latest version of your script from the Gist
+          gh gist view "$GIST_ID" -f "vod_script.py" > run_vod.py
+          
+          # 2. Run the script to generate vod.m3u
+          python run_vod.py
+          
+          # 3. Push the generated vod.m3u back to the Gist
+          gh gist edit "$GIST_ID" -f "vod.m3u" "vod.m3u"
+          echo "✅ Gist VOD file updated successfully!"
