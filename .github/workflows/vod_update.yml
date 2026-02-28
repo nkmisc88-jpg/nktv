@@ -1,36 +1,50 @@
-name: Tamil VOD Sync (Gist to Gist)
+name: Ghost VOD Update
 
 on:
   schedule:
-    - cron: '0 */21 * * *'  # Set to your preferred 21hr interval
+    - cron: '0 */21 * * *' # Set to run every 21 hours
   workflow_dispatch:
 
 jobs:
-  run-sync:
+  update-vod-gist:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
+      - name: Checkout Public Runner
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: Install Dependencies
-        run: pip install requests
-
-      - name: Download and Run Script from Gist
+      - name: Download VOD Script from Gist
         env:
           GH_TOKEN: ${{ secrets.GIST_TOKEN }}
-          GIST_ID: "PASTE_YOUR_GIST_ID_HERE"
+          GIST_ID: ${{ secrets.GIST_ID }} 
         run: |
-          # 1. Download the latest version of your script from the Gist
-          gh gist view "$GIST_ID" -f "vod_script.py" > run_vod.py
+          # Clone the gist to a workspace folder
+          gh gist clone $GIST_ID vod_workspace
+          # Move the VOD script to the root to execute
+          mv vod_workspace/vod_script.py .
+
+      - name: Run VOD Script
+        run: |
+          pip install requests
+          python vod_script.py
+
+      - name: Upload Result to Gist
+        env:
+          GH_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
           
-          # 2. Run the script to generate vod.m3u
-          python run_vod.py
+          # Copy the fresh M3U file into the cloned gist folder
+          cp vod.m3u vod_workspace/
           
-          # 3. Push the generated vod.m3u back to the Gist
-          gh gist edit "$GIST_ID" -f "vod.m3u" "vod.m3u"
-          echo "✅ Gist VOD file updated successfully!"
+          cd vod_workspace
+          git add vod.m3u
+          git commit -m "🤖 Auto-update Tamil VOD playlist" || echo "No changes to commit"
+          # Push using the token for authentication
+          git push https://$GH_TOKEN@gist.github.com/$GIST_ID.git HEAD
