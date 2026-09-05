@@ -2,7 +2,7 @@ name: Ghost Playlist Update
 
 on:
   schedule:
-    - cron: '*/3 * * * *' # Runs every 3 minutes
+    - cron: '*/7 * * * *' # Runs every 7 minutes
   workflow_dispatch: # Allows manual trigger
 
 jobs:
